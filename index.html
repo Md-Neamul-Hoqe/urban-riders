@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Riders</title>
+    <link rel="shortcut icon" href="./images/peopleicon.png" type="image/x-icon">
+
+    <!-- Tailwind CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // tailwind.config.js
+        module.exports = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'custom-image': "url('./images./Bg.png')",
+                    },
+                },
+            },
+            variants: {},
+            plugins: [],
+        };
+
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+
+    <style>
+        header {
+            background: url("./images/Bg.png") center center / cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="py-10 flex justify-end mx-36">
+            <div class="flex gap-12 justify-end items-center w-1/2 text-lg font-medium">
+                <ul class="flex gap-12 text-[#2D2D2D]">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./search.html">Destination</a></li>
+                    <li><a href="./createAccount.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="border-0 rounded bg-[#FF6E40] text-white px-7 py-3">Login</button>
+            </div>
+        </nav>
+
+        <!-- home section -->
+        <section id="home-section" class="flex h-[calc(100vh-132px)] px-36">
+            <div class="flex gap-10 justify-between items-center">
+                <div class="border-0 bg-white rounded-lg h-64 p-10 flex flex-col items-center justify-end gap-5 cursor-pointer">
+                    <img class="w-9/12" src="./images/Frame.png" alt="bike">
+                    <p class="font-semibold text-2xl text-[#2D2D2D]">BIKE</p>
+                </div>
+                <div class="border-0 bg-white rounded-lg h-64 p-10 flex flex-col items-center justify-end gap-5 cursor-pointer">
+                    <img class="w-9/12" src="./images/Frame-2.png" alt="car">
+                    <p class="font-semibold text-2xl text-[#2D2D2D]">CAR</p>
+                </div>
+                <div class="border-0 bg-white rounded-lg h-64 p-10 flex flex-col items-center justify-end gap-5 cursor-pointer">
+                    <img class="w-9/12" src="./images/Frame-1.png" alt="bus">
+                    <p class="font-semibold text-2xl text-[#2D2D2D]">BUS</p>
+                </div>
+                <div class="border-0 bg-white rounded-lg h-64 p-10 flex flex-col items-center justify-end gap-5 cursor-pointer">
+                    <img class="w-9/12" src="./images/Group.png" alt="train">
+                    <p class="font-semibold text-2xl text-[#2D2D2D]">TRAIN</p>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+    </main>
+</body>
+
+</html>

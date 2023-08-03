@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Riders</title>
+    <link rel="shortcut icon" href="./images/peopleicon.png" type="image/x-icon">
+
+    <!-- Tailwind CDN link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Roboto & Montserrat Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- avenir font -->
+    <link rel="stylesheet" href="./fonts/avenir/AvenirLTStd-Roman.otf">
+    <link rel="stylesheet" href="./fonts/avenir/AvenirLTStd-Book.otf">
+    <link rel="stylesheet" href="./fonts/avenir/AvenirLTStd-Black.otf">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+
+    <style>
+        .font-montserret {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .font-roboto {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .font-avenir {
+            font-family: 'Avenir', sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="bg-white text-black">
+        <nav class="py-10 flex justify-end mx-36">
+            <div class="flex gap-12 justify-end items-center w-1/2 text-lg font-medium">
+                <ul class="flex gap-12 text-[#2D2D2D]">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#">Destination</a></li>
+                    <li><a href="./createAccount.html">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <button class="border-0 rounded bg-[#FF6E40] text-white px-7 py-3 hidden">Login</button>
+                <div class="font-bold min-w-fit">Md. Neamul Hoqe</div>
+            </div>
+        </nav>
+
+        <!-- Form Section -->
+        <section class="flex h-[calc(100vh-132px)] mx-36 items-start gap-7 border-t pt-8">
+            <form action="#"
+                class="bg-[#EFEFEF] flex hidden flex-col border rounded-lg p-5 max-w-sm font-roboto text-sm">
+                <label class="pb-1 pt-3" for="pick">Pick from</label>
+                <input class="p-2 rounded" type="text" placeholder="From" name="pick">
+                <label class="pb-1 pt-3" for="pop">Pick to</label>
+                <input class="p-2 rounded" type="text" placeholder="To" name="pop">
+                <input class="rounded border-0 bg-orange-500 text-white p-4 my-4" type="submit" value="Search">
+            </form>
+
+            <form action="#" class="bg-[#EFEFEF] flex flex-col gap-3 border rounded-lg p-5 w-96 font-roboto text-sm">
+                <!-- steps need daisy UI -->
+                <ul class="flex list-none flex-col bg-[#FF6E40] rounded">
+                    <li class="list">Mirpur1</li>
+                    <li class=" -[#FFFFFF]">Dhanmondi</li>
+                </ul>
+                <ul class="flex flex-col gap-3">
+                    <li class="flex flex-row items-center justify-between gap-5 px-5 py-10 h-10 rounded bg-white">
+                        <span class="flex items-center gap-3"><img class="w-10" src="./images/Frame-2.png" alt="car">
+                            Car
+                        </span><span class="flex items-center gap-3"> <img class="w-5" src="./images/peopleicon.png"
+                                alt="peopleicon">4</span>
+                        <span class="">$45</span>
+                    </li>
+                    <li class="flex flex-row items-center justify-between gap-5 px-5 py-10 h-10 rounded bg-white">
+                        <span class="flex items-center gap-3"><img class="w-10" src="./images/Frame-2.png" alt="car">
+                            Car
+                        </span><span class="flex items-center gap-3"> <img class="w-5" src="./images/peopleicon.png"
+                                alt="peopleicon">4</span>
+                        <span class="">$45</span>
+                    </li>
+                    <li class="flex flex-row items-center justify-between gap-5 px-5 py-10 h-10 rounded bg-white">
+                        <span class="flex items-center gap-3"><img class="w-10" src="./images/Frame-2.png" alt="car">
+                            Car
+                        </span><span class="flex items-center gap-3"> <img class="w-5" src="./images/peopleicon.png"
+                                alt="peopleicon">4</span>
+                        <span class="">$45</span>
+                    </li>
+                </ul>
+            </form>
+            <div class="rounded-lg flex-1">
+                <img class="w-full" src="./images/Map.png" alt="Road Map">
+            </div>
+        </section>
+    </header>
+    <main>
+    </main>
+</body>
+
+</html>
